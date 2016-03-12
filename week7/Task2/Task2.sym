@@ -1,18 +1,15 @@
 //Symbol Name		Page Address
 //----------------	------------
-//	Check6                  302B
-//	Input                   3026
-//	Laddr                   3025
-//	M                       3022
-//	M1                      3019
-//	MClean                  3023
-//	N                       3021
-//	NClean                  3024
-//	Result                  3020
-//	S1                      300E
-//	S2                      3012
-//	SW6_01                  3006
-//	SW6_11                  3000
-//	Saddr                   302A
-//	bye                     301E
-//	dvi                     301F
+//	Laddr                   3021
+//	Last                    3017
+//	M                       301D
+//	M1                      3014
+//	MaskM                   301E
+//	MaskN                   301F
+//	N                       301C
+//	Result                  301B
+//	S1                      3007
+//	S2                      300B
+//	Saddr                   3020
+//	dvi                     301A
+//	top                     3000

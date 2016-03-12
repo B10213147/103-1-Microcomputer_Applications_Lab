@@ -1,14 +1,14 @@
 //Symbol Name		Page Address
 //----------------	------------
-//	Laddr                   3023
-//	M                       301F
-//	M2                      3012
-//	MClean                  3020
-//	N                       301E
-//	NClean                  3021
-//	Result                  301D
-//	S1                      3007
-//	S2                      300B
-//	Saddr                   3022
-//	dvi                     301C
+//	Laddr                   301E
+//	M                       301A
+//	M2                      300F
+//	MClean                  301B
+//	N                       3019
+//	NClean                  301C
+//	Result                  3018
+//	S1                      3005
+//	S2                      3009
+//	Saddr                   301D
+//	dvi                     3017
 //	top                     3000

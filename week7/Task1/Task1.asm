@@ -1,15 +1,16 @@
+;;;;;;;;Reading N,M from switches ;;;;;;;;
+;M:= SW[3:0]
+;N:= SW[7:4]
 	.ORIG x3000
 top	LDI R5,Saddr
 	;
 	;process N
 	LD R2,dvi
-	NOT R2,R2
-	ADD R2,R2,#1
 	AND R6,R6,#0
 	LD R1,NClean
 	AND R1,R5,R1
-S1	BRz S2			;R6 <- N/8
-	ADD R6,R6,#1
+S1	BRz S2		;input right shift 4 bits
+	ADD R6,R6,#1	;R6 <- N/16
 	ADD R1,R1,R2
 	BRp S1
 S2	ST R6,N
@@ -18,29 +19,26 @@ S2	ST R6,N
 	LD R1,MClean
 	AND R1,R5,R1
 	ST R1,M
-	LD R2,dvi
-	AND R3,R3,#0
-	LD R1,M
-M2	ADD R3,R3,R1	;R3 <- M*8
+	AND R2,R2,#0
+	ADD R2,R2,#4
+M2	ADD R1,R1,R1	;M left shift 4 bits
 	ADD R2,R2,#-1
 	BRp M2
-	LD R6,NClean
-	AND R3,R3,R6
 	;
 	;combine [MN]	
 	LD R6,N
-	ADD R3,R3,R6 	
+	ADD R3,R1,R6 	
 	ST R3,Result
 	STI R3,Laddr
 	BR top
 ;
 ;register location
-dvi	.FILL #8
+dvi	.FILL #-16
 Result	.FILL #0
 N	.FILL #0
 M	.FILL #0
-MClean	.FILL x0007
-NClean	.FILL x0038
+MClean	.FILL x000F
+NClean	.FILL x00F0
 Saddr	.FILL xFFFC
 Laddr	.FILL xFFFD
 	.END
