@@ -1,15 +1,15 @@
 //Symbol Name		Page Address
 //----------------	------------
-//	Check8                  3030
-//	Laddr                   302F
-//	M                       302B
-//	M1                      301C
-//	M2                      3022
-//	M3                      3026
-//	N                       302A
-//	Result                  302C
-//	SW8_1                   3001
-//	SW8_2                   300D
-//	Saddr                   302E
-//	Temp                    302D
-//	bye                     3029
+//	Check7                  3023
+//	Clean                   3022
+//	Laddr                   3029
+//	M                       3025
+//	M1                      3007
+//	M2                      300D
+//	M3                      3011
+//	N                       3024
+//	Result                  3026
+//	SW7                     3015
+//	Saddr                   3028
+//	Temp                    3027
+//	bye                     3014
