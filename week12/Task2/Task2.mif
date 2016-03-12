@@ -1,0 +1,101 @@
+-- Copyright (C) 1991-2009 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=16384;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+3000	:	2031	;
+3001	:	B032	;
+3002	:	B030	;
+3003	:	5020	;
+3004	:	1023	;
+3005	:	E224	;
+3006	:	E427	;
+3007	:	1240	;
+3008	:	1480	;
+3009	:	6240	;
+300A	:	6480	;
+300B	:	94BF	;
+300C	:	14A1	;
+300D	:	261B	;
+300E	:	5920	;
+300F	:	56C1	;
+3010	:	0403	;
+3011	:	1921	;
+3012	:	16C2	;
+3013	:	03FD	;
+3014	:	1E20	;
+3015	:	0407	;
+3016	:	1FFE	;
+3017	:	0405	;
+3018	:	E226	;
+3019	:	1244	;
+301A	:	6C40	;
+301B	:	103F	;
+301C	:	0FE8	;
+301D	:	E217	;
+301E	:	1244	;
+301F	:	6640	;
+3020	:	1E20	;
+3021	:	0404	;
+3022	:	52C6	;
+3023	:	B210	;
+3024	:	103F	;
+3025	:	0FDF	;
+3026	:	52C6	;
+3027	:	B20B	;
+3028	:	0FDA	;
+3029	:	3147	;
+302A	:	000F	;
+302B	:	00F0	;
+302C	:	0F00	;
+302D	:	F000	;
+302E	:	0001	;
+302F	:	0010	;
+3030	:	0100	;
+3031	:	1000	;
+3032	:	FFFF	;
+3033	:	FFFB	;
+3034	:	FFFA	;
+3035	:	FFC0	;
+3036	:	FFF9	;
+3037	:	FFA4	;
+3038	:	FFB0	;
+3039	:	FF99	;
+303A	:	FF92	;
+303B	:	FF82	;
+303C	:	FFF8	;
+303D	:	FF80	;
+303E	:	FF98	;
+303F	:	C0FF	;
+3040	:	F9FF	;
+3041	:	A4FF	;
+3042	:	B0FF	;
+3043	:	99FF	;
+3044	:	92FF	;
+3045	:	82FF	;
+3046	:	F8FF	;
+3047	:	80FF	;
+3048	:	98FF	;
+
+
+
+[3049..3FFF]  :   0000;
+END;
