@@ -1,0 +1,12 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	BYE                     302C
+//	COMP                    302F
+//	Create                  3003
+//	FILE                    3030
+//	M1                      300B
+//	M2                      3011
+//	M4                      302A
+//	SIZE                    302D
+//	SWAPS                   302E
+//	swap_next               3021
