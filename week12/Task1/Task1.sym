@@ -1,0 +1,10 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	D1                      3008
+//	Delay                   3012
+//	FF_Tbl                  3013
+//	Hex10                   3011
+//	Hex32                   3010
+//	M1                      3006
+//	TOP                     3003
+//	disable                 300F
