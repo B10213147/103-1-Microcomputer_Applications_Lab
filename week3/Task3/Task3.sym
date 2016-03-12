@@ -1,14 +1,15 @@
 //Symbol Name		Page Address
 //----------------	------------
-//	Check7                  301A
-//	Clean                   3019
-//	Laddr                   3020
-//	M                       301C
-//	M1                      300B
+//	Check7                  3020
+//	Input                   301C
+//	Laddr                   301B
+//	M                       3018
+//	M1                      300C
 //	M2                      3011
-//	M3                      3015
-//	N                       301B
-//	Result                  301D
-//	Saddr                   301F
-//	Temp                    301E
-//	bye                     3018
+//	M3                      3014
+//	N                       3017
+//	Result                  3019
+//	SW7_01                  3006
+//	SW7_11                  3000
+//	Saddr                   301A
+//	bye                     3016
