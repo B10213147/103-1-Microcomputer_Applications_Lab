@@ -1,0 +1,30 @@
+	.ORIG x3000
+	LD R7,Saddr
+	LD R6,Clean
+	;LD R0,N
+	LDR R0,R7,#0
+	;ADD R0,R0,#15
+	AND R0,R0,R6
+	ST R0,N
+	LD R6,Laddr
+	STR R0,R6,#0
+	AND R2,R2,x0000
+	AND R1,R1,x0000
+	ADD R1,R1,#1
+	
+L1	BRnz M2
+	ADD R2,R1,R2
+	ADD R1,R1,#1
+	ADD R0,R0,#-1
+	BRnzp L1
+
+M2	ST R2,Sum
+	LD R6,Laddr
+	STR R2,R6,#0
+BYE	BRnzp BYE
+Clean	.FILL x003F
+N	.FILL #3
+Sum	.FILL #0
+Saddr 	.FILL xFFFC
+Laddr	.FILL xFFFD
+	.END

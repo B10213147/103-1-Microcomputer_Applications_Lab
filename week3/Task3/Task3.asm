@@ -1,0 +1,58 @@
+	.ORIG x3000
+	LD R0,Saddr	
+SW8_1	LDR R1,R0,#0
+	;LD R1,N
+	LD R2,Check8
+	AND R3,R1,R2
+	NOT R2,R2
+	ADD R2,R2,#1
+	ADD R3,R3,R2
+	BRnp SW8_1
+	LD R2,Check8
+	NOT R2,R2
+	ADD R2,R2,#1
+	ADD R1,R1,R2
+	ST R1,N
+	
+SW8_2	LDR R1,R0,#0
+	;LD R1,M
+	LD R2,Check8
+	AND R3,R1,R2
+	NOT R2,R2
+	ADD R2,R2,#1
+	ADD R3,R3,R2
+	BRnp SW8_2
+	LD R2,Check8
+	NOT R2,R2
+	ADD R2,R2,#1
+	ADD R1,R1,R2
+	ST R1,M	
+	
+	LD R0,N	
+	NOT R1,R1
+	ADD R1,R1,#1
+M1	ADD R2,R0,R1
+	BRn M2
+	BRz M3
+	ST R2,Temp
+	LD R0,Temp
+	BRnzp M1
+	
+M2	ST R0,Result
+	LD R6,Laddr
+	STR R0,R6,#0	
+	BRnzp bye
+
+M3 	ST R2,Result
+	LD R6,Laddr
+	STR R2,R6,#0	
+bye	BRnzp bye
+
+N	.FILL x01AC
+M	.FILL x0150
+Result	.FILL #0
+Temp	.FILL #0
+Saddr	.FILL xFFFC
+Laddr	.FILL xFFFD	
+Check8	.FILL x0100
+	.END
