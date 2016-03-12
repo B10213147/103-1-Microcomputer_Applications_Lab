@@ -18,14 +18,29 @@ M1	LEA R1,Mask
 	;
 	;count digit's value
 	LD R3,NUM
-	AND R4,R4,#0
+	LD R5,Modify
+	ADD R3,R3,R5
+	BRzp M1_1
+	LD R2,Reset
+	ST R2,NUM
+	BR TOP
+M1_1	AND R4,R4,#0
 	AND R3,R3,R1
 	BRz S1
-	NOT R2,R2
-	ADD R2,R2,#1
+	;NOT R2,R2
+	;ADD R2,R2,#1
 M1_0	ADD R4,R4,#1
 	ADD R3,R3,R2
 	BRnp M1_0
+	;ADD R4,R4,#-6
+	;BRzp S1
+	;LD R0,NUM
+	
+	;ADD R1,R0,R1
+	
+;M1_1	ADD R0,R0,#-1
+	;ST R0,NUM
+	;BR TOP
 	;
 	;check R0 is even or odd
 S1	ADD R7,R0,#0
@@ -56,15 +71,17 @@ M2_0	AND R1,R3,R6
 	BR TOP
 ;	
 ;register location
-NUM	.FILL #0010	;start with x000F
+NUM	.FILL x6677	;start with x000F
+Modify	.FILL x-6666	
+Reset	.FILL xFFFF
 Mask	.FILL x000F
 	.FILL x00F0
 	.FILL x0F00
 	.FILL xF000
-div	.FILL x0001
-	.FILL x0010
-	.FILL x0100
-	.FILL x1000
+div	.FILL x-0001
+	.FILL x-0010
+	.FILL x-0100
+	.FILL x-1000
 disable	.FILL xFFFF
 Hex10	.FILL xFFFB	
 Hex32	.FILL xFFFA
