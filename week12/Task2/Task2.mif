@@ -1,0 +1,108 @@
+-- Copyright (C) 1991-2009 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=16384;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+3000	:	2033	;
+3001	:	B034	;
+3002	:	B032	;
+3003	:	262F	;
+3004	:	5260	;
+3005	:	126F	;
+3006	:	54A0	;
+3007	:	14A3	;
+3008	:	5B60	;
+3009	:	1B7F	;
+300A	:	EC2C	;
+300B	:	5FE0	;
+300C	:	5843	;
+300D	:	0403	;
+300E	:	1FE1	;
+300F	:	1905	;
+3010	:	0BFD	;
+3011	:	7F80	;
+3012	:	5020	;
+3013	:	1024	;
+3014	:	1241	;
+3015	:	103F	;
+3016	:	03FD	;
+3017	:	5020	;
+3018	:	1024	;
+3019	:	1B45	;
+301A	:	103F	;
+301B	:	03FD	;
+301C	:	1DA1	;
+301D	:	14BF	;
+301E	:	07EC	;
+301F	:	EE17	;
+3020	:	EC1A	;
+3021	:	63C0	;
+3022	:	1381	;
+3023	:	6240	;
+3024	:	67C2	;
+3025	:	1783	;
+3026	:	66C0	;
+3027	:	EC1D	;
+3028	:	65C1	;
+3029	:	1582	;
+302A	:	6480	;
+302B	:	69C3	;
+302C	:	1984	;
+302D	:	6900	;
+302E	:	5A42	;
+302F	:	BA05	;
+3030	:	5AC4	;
+3031	:	BA04	;
+3032	:	0FEC	;
+3033	:	3147	;
+3034	:	FFFF	;
+3035	:	FFFB	;
+3036	:	FFFA	;
+3037	:	0000	;
+3038	:	0000	;
+3039	:	0000	;
+303A	:	0000	;
+303B	:	FFC0	;
+303C	:	FFF9	;
+303D	:	FFA4	;
+303E	:	FFB0	;
+303F	:	FF99	;
+3040	:	FF92	;
+3041	:	FF82	;
+3042	:	FFF8	;
+3043	:	FF80	;
+3044	:	FF98	;
+3045	:	C0FF	;
+3046	:	F9FF	;
+3047	:	A4FF	;
+3048	:	B0FF	;
+3049	:	99FF	;
+304A	:	92FF	;
+304B	:	82FF	;
+304C	:	F8FF	;
+304D	:	80FF	;
+304E	:	98FF	;
+
+
+
+
+[304F..3FFF]  :   0000;
+END;
