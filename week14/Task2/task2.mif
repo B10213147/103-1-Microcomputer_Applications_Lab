@@ -1,0 +1,97 @@
+-- Copyright (C) 1991-2009 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=16384;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+3000	:	2042	;
+3001	:	E244	;
+3002	:	103F	;
+3003	:	7040	;
+3004	:	1261	;
+3005	:	103F	;
+3006	:	07FC	;
+3007	:	5DA0	;
+3008	:	5B60	;
+3009	:	5020	;
+300A	:	2438	;
+300B	:	14BF	;
+300C	:	0C30	;
+300D	:	EE38	;
+300E	:	67C0	;
+300F	:	5920	;
+3010	:	382F	;
+3011	:	5260	;
+3012	:	90BF	;
+3013	:	1021	;
+3014	:	1261	;
+3015	:	1040	;
+3016	:	021A	;
+3017	:	1B61	;
+3018	:	5020	;
+3019	:	7A3F	;
+301A	:	5FE0	;
+301B	:	1960	;
+301C	:	2024	;
+301D	:	1FE1	;
+301E	:	1900	;
+301F	:	07FD	;
+3020	:	1FFF	;
+3021	:	5020	;
+3022	:	7E3E	;
+3023	:	2E1E	;
+3024	:	1FFF	;
+3025	:	07FE	;
+3026	:	EE1F	;
+3027	:	1FC1	;
+3028	:	6FC0	;
+3029	:	90FF	;
+302A	:	1021	;
+302B	:	1007	;
+302C	:	0DE5	;
+302D	:	17E0	;
+302E	:	1860	;
+302F	:	3810	;
+3030	:	0FE1	;
+3031	:	EE14	;
+3032	:	1FC2	;
+3033	:	61C0	;
+3034	:	77C0	;
+3035	:	EE10	;
+3036	:	2809	;
+3037	:	1FC4	;
+3038	:	71C0	;
+3039	:	1DA1	;
+303A	:	5020	;
+303B	:	7C3D	;
+303C	:	0FCE	;
+303D	:	3C06	;
+303E	:	3A06	;
+303F	:	0FFF	;
+3040	:	0000	;
+3041	:	FF00	;
+3042	:	001E	;
+3043	:	000A	;
+3044	:	0000	;
+3045	:	0000	;
+3046	:	0000	;
+
+[3047..3FFF]  :   0000;
+END;
