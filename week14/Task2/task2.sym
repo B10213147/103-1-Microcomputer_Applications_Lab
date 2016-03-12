@@ -1,12 +1,17 @@
 //Symbol Name		Page Address
 //----------------	------------
-//	BYE                     302C
-//	COMP                    302F
+//	BYE                     303F
+//	COMP                    3045
 //	Create                  3003
-//	FILE                    3030
+//	D                       3024
+//	Delay                   3042
+//	FILE                    3046
 //	M1                      300B
-//	M2                      3011
-//	M4                      302A
-//	SIZE                    302D
-//	SWAPS                   302E
-//	swap_next               3021
+//	M2                      3012
+//	M4                      303D
+//	S1                      301D
+//	SIZE                    3043
+//	SWAPS                   3044
+//	div                     3041
+//	i_max                   3040
+//	swap_next               3031
