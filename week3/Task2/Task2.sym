@@ -1,12 +1,13 @@
 //Symbol Name		Page Address
 //----------------	------------
-//	BYE                     3018
-//	Check6                  301A
-//	Clean                   3019
-//	L1                      3010
-//	Laddr                   301E
-//	M2                      3015
-//	N                       301B
-//	SW6                     3001
-//	Saddr                   301D
-//	Sum                     301C
+//	BYE                     3013
+//	Check7                  301C
+//	Input                   3018
+//	L1                      300C
+//	Laddr                   3017
+//	M2                      3011
+//	N                       3014
+//	SW7_01                  3006
+//	SW7_11                  3000
+//	Saddr                   3016
+//	Sum                     3015

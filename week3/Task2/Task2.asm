@@ -1,42 +1,41 @@
+;Compute Sum=1+2+...+N and store the result into memory location Sum.
+;Use switches SW7_0 to input the value of N ai the beginning of your program.
+;Show Sum on LED9_0 at the end of your program.
 	.ORIG x3000
-	;LD R0,Laddr
-	;AND R0,R0,#0
-	;STR R0,
-	LD R0,Saddr
-;set input value
-SW6	LDR R1,R0,#0
-	LD R2,Check6
-	AND R3,R1,R2
-	NOT R2,R2
-	ADD R2,R2,#1
-	ADD R3,R3,R2
-	BRnp SW6
-	LD R4,Clean
-	AND R1,R1,R4
-	ADD R1,R1,R2
+SW7_11	JSR Input
+	BRnz SW7_11		;SW7==1 go down
+	NOT R6,R6
+	AND R0,R0,R6 
+	ST R0,N
+	STI R0,Laddr	;display value of N
+SW7_01	JSR Input
+	BRnp SW7_01		;SW7==0 go down
 	
-	ST R1,N
 	AND R2,R2,x0000
 	AND R1,R1,x0000
 	ADD R1,R1,#1
-	LD R0,N 
-;compute the sum	
+	LD R0,N
+;compute sum	
 L1	BRnz M2
 	ADD R2,R1,R2
 	ADD R1,R1,#1
 	ADD R0,R0,#-1
-	BRnzp L1
+	BR L1
 
 M2	ST R2,Sum
-	LD R6,Laddr
-	STR R2,R6,#0
-BYE	BRnzp BYE
+	STI R2,Laddr
+BYE	BR BYE
 ;
-;register location
-Clean	.FILL x007F
-Check6	.FILL x0040
+;register value
 N	.FILL #3
 Sum	.FILL #0
 Saddr 	.FILL xFFFC
 Laddr	.FILL xFFFD
+;
+;recive input value
+Input	LDI R0,Saddr
+	LD R6,Check7
+	AND R1,R0,R6
+	RET
+Check7	.FILL x0080
 	.END
